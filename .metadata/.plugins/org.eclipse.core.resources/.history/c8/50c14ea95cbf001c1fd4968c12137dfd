@@ -1,0 +1,23 @@
+package teste;
+
+import br.com.fiap.healthTrack.CondicionamentoFisico;
+
+/**
+ * Classe de Testes para CondicionamentoFisico
+ */
+public class TesteCondicionamentoFisico {
+
+	/**
+	 * fun√ß√£o de testes
+	 * @param args Argumentos para testes
+	 */
+	public static void main(String[] args) {
+		CondicionamentoFisico condicionamento = new CondicionamentoFisico(
+				1.78f,
+				78.00f
+				);
+		
+		System.out.println("Sua altura È: " + condicionamento.getAltura());
+		System.out.println("Seu peso È: "condicionamento.getPeso());
+	}
+}

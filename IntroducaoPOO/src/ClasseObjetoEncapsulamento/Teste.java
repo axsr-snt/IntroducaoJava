@@ -1,0 +1,28 @@
+package ClasseObjetoEncapsulamento;
+
+public class Teste {
+	public static void main(String[] args) {
+		System.out.println("Olá, Mundo!");
+		
+		/*
+		O operador "new" inicializa uma instância/referência de um objeto de uma classe;
+		O operador "new" cria um objeto na área de alocação dinamica da memória deixando acessível pela aplicação;
+		*/
+		
+		Conta c1 = new Conta("00001","0021012","888.888.888.88");
+		
+		/*
+		O construtor é definido como um método cujo nome deve ser o mesmo nome da classe e sem indicação do tipo de retorno
+		new Classe("xxxxxx","xxxxxxxxx"...);
+		O construtor é invocado unicamente no momento da criação do objeto através do operador new;
+		*/
+		
+		//c1.setAgencia("000001"); set = atribuir um valor
+		c1.getCliente().setNome("Caio");
+		float novoSaldo = c1.Depositar(100);
+		
+		System.out.println(c1.getCliente().getNome());
+		System.out.println(novoSaldo);
+		System.out.println(c1.toString());
+	}
+}

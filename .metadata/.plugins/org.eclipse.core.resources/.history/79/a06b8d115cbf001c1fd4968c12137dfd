@@ -1,0 +1,24 @@
+package teste;
+
+import br.com.fiap.healthTrack.Estado;
+
+/**
+ * Classe de Testes para Estado
+ */
+public class TesteEstado {
+
+	/**
+	 * função de testes
+	 * @param args Argumentos para testes
+	 */
+	public static void main(String[] args) {
+		Estado estado = new Estado(
+				"sp",
+				"São Paulo"
+			);
+		
+		System.out.println(estado.getUf());
+		System.out.println(estado.getEstado());
+				
+	}
+}

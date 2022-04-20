@@ -1,0 +1,215 @@
+package br.com.fiap.healthTrack;
+
+/**
+ * Endereço do Usuário
+ */
+public class Endereco {
+	
+	// Atributos da classe
+
+	/**
+	 * logradouro do endereço
+	 */
+	private String endereco;
+	
+	/**
+	 * número do endereço
+	 */
+	private String numero;
+	
+	/**
+	 * complemento do endereço
+	 */
+	private String complemento;
+	
+	/**
+	 * bairro do endereço
+	 */
+	private String bairro;
+	
+	/**
+	 * cep do endereço
+	 */
+	private String cep;
+	
+	/**
+	 * referência do endereço
+	 */
+	private String referencia;
+	
+	/**
+	 * cidade do endereço
+	 */
+	private String cidade;
+
+	/**
+	 * informações do estado do endereço
+	 */
+	private Estado estado;
+
+	
+	// Métodos da classe
+	
+	/**
+	 * retorna logradouro do endereço
+	 * @return endereco
+	 */
+	public String getEndereco() {
+		return endereco;
+	}
+
+	/**
+	 * determina logradouro do endereço
+	 * @param endereco Lougradouro do Endereço
+	 */
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+	
+	/**
+	 * retorna número do endereço
+	 * @return numero
+	 */
+	public String getNumero() {
+		return numero;
+	}
+	
+	/**
+	 * determina número do endereço
+	 * @param numero Número do Endereço
+	 */
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+	
+	/**
+	 * retorna complemento do endereço
+	 * @return complemento do endereço
+	 */
+	public String getComplemento() {
+		return complemento;
+	}
+	
+	/**
+	 * determina complemento do endereço
+	 * @param complemento do endereço
+	 */
+	public void setComplemento(String complemento) {
+		this.complemento = complemento;
+	}
+	
+	/**
+	 * retorna bairro do endereço
+	 * @return bairro do endereço
+	 */
+	public String getBairro() {
+		return bairro;
+	}
+	
+	/**
+	 * determina bairro do endereço
+	 * @param bairro do endereço
+	 */
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
+	}
+	
+	/**
+	 * retorna cep do endereço
+	 * @return cep do endereço
+	 */
+	public String getCep() {
+		return cep;
+	}
+	
+	/**
+	 * determina cep do endereço
+	 * @param cep do endereço
+	 */
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+	
+	/**
+	 * retorna referência do endereço
+	 * @return referência do endereço
+	 */
+	public String getReferencia() {
+		return referencia;
+	}
+	
+	/**
+	 * determina referência do endereço
+	 * @param referencia Referência do Endereço
+	 */
+	public void setReferencia(String referencia) {
+		this.referencia = referencia;
+	}
+
+	/**
+	 * retorna cidade do endereço
+	 * @return cidade do endereço
+	 */
+	public String getCidade() {
+		return cidade;
+	}
+	
+	/**
+	 * determina cidade do endereço
+	 * @param cidade do endereço
+	 */
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+	/**
+	 * retorna informações do estado do endereço
+	 * @return informações do estado do endereço
+	 */
+	public Estado getEstado() {
+		return estado;
+	}
+	
+	/**
+	 * determina estado do endereço
+	 * @param estado do endereço
+	 */
+	public void setEstado(Estado estado) {
+		this.estado = estado;
+	}
+
+	// Construtores da classe
+	
+	/**
+	 * cria nova instância de Endereço completa
+	 * @param endereco Endereço do Usuário
+	 * @param numero Número do Endereço
+	 * @param complemento Complemento do Endereço
+	 * @param bairro Bairro do Endereço
+	 * @param cep Cep do Endereço
+	 * @param referencia do Endereço
+	 * @param cidade do Endereço
+	 */
+	public Endereco(
+			String endereco,
+			String numero,
+			String complemento,
+			String bairro,
+			String cep,
+			String referencia,
+			String cidade
+		) {
+		this.endereco = endereco;
+		this.numero = numero;
+		this.complemento = complemento;
+		this.bairro = bairro;
+		this.cep = cep;
+		this.referencia = referencia;
+		this.cidade = cidade;
+	}
+
+	@Override
+	public String toString() {
+		return "Endereco:" + endereco + ", " + numero + " " + complemento + ", "
+				+ bairro + ",  " + cep + ", Referencia: " + referencia + ", " + cidade + "-" + estado;
+	}
+}

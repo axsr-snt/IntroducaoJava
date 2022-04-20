@@ -1,0 +1,26 @@
+package ExercicioIMC;
+
+import java.util.Scanner;
+
+public class CaracteristicaUsuario {
+
+	public static void main (String[] args) {
+		
+		Scanner retorno = new Scanner(System.in);
+		Usuario nome = new Usuario();
+
+		String obj1 = nome.getNomeUsuario();
+		
+		System.out.print("Olá, " + obj1 + "!\n");
+		
+		System.out.print("Por favor digite sua altura(m): ");
+		float altura = retorno.nextFloat();
+		System.out.print("Sua altura é: " + altura + " m\n");
+		
+		System.out.print("Por favor digite seu peso (kg): ");
+		float peso = retorno.nextFloat();
+		System.out.print("Seu peso é: " + peso + " kg\n");
+		
+		retorno.close();
+	}	
+}

@@ -1,0 +1,38 @@
+package ExercicioIMC;
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class CaracteristicaUsuario {
+
+	public static void main (String[] args) {
+		
+		Scanner retorno = new Scanner(System.in);
+		DecimalFormat df = new DecimalFormat("#.##");
+		Usuario nome = new Usuario();
+
+		String obj1 = nome.getNomeUsuario();
+		
+		System.out.print("Olá, " + obj1 + "!" + "\r");
+		
+		System.out.print("Por favor digite sua altura(m): ");
+		float altura = retorno.nextFloat();
+		System.out.print("Sua altura é: " + altura + " m \r");
+		
+		System.out.print("Por favor digite seu peso (kg): ");
+		float peso = retorno.nextFloat();
+		System.out.print("Seu peso é: " + peso + " kg \r");
+		
+		float imc = peso/(altura * altura);
+		System.out.println("Seu IMC é: " + df.format(imc)+"\n");
+		
+		if(imc < 18.5) {
+			System.out.println("Seu IMC está abaixo do ideal!");
+		} else if(imc > 25) {
+			System.out.println("Seu IMC está acima do ideal!");
+		} else {
+			System.out.println("Seu IMC está ideal!");
+		}
+		retorno.close();
+	}	
+}

@@ -1,0 +1,37 @@
+package teste;
+
+import br.com.fiap.healthTrack.Esporte;
+import br.com.fiap.healthTrack.Evento;
+
+/**
+ * Classe de Testes para Evento
+ */
+public class TesteEvento {
+
+	/**
+	 * função de testes
+	 * @param args Argumentos para testes
+	 */
+	public static void main(String[] args) {
+		Esporte esporte = new Esporte(
+				"corrida",
+				100.00f,
+				500.00f
+			);
+		
+		Evento evento = new Evento(
+				"corrida matutina",
+				"2022-04-10 10:00:00",
+				"2022-04-10 11:30:00",
+				"01:30:00",
+				35.37f,
+				150.00f,
+				450.00f,
+				esporte
+				);
+				
+		System.out.println(evento.getEsporte());
+		System.out.println(evento.getCaloriaGasta());
+		System.out.println(evento.getCarbonoPoupado());
+	}
+}

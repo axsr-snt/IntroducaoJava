@@ -1,0 +1,37 @@
+package ExercicioIdade;
+
+import java.util.Scanner; 
+
+/* para fazer uso da classe Scanner precisamos importar o pacote/e a classe da biblioteca java referente a essa classe
+ a instrução import importa um pacote/ e classe */
+
+public class EntradaSaida {
+	
+	public static void main(String[] args) {
+		
+		int idade = 0;
+		
+		Scanner sc1 = new Scanner(System.in);
+		
+		
+		System.out.println("Digite a idade: ");
+		idade = sc1.nextInt(); // retorno do input na variável idade
+		
+		if(idade >= 100) {
+			System.out.println("Centenário");		
+		} else if(idade >= 60 ) {
+			System.out.println("Terceira idade");
+		} else if(idade >= 18) {
+			System.out.println("Adulto");
+		} else if(idade >= 14) {
+			System.out.println("Adolescente");
+		} else if(idade >= 12) {
+			System.out.println("Pré-Adolescente");
+		} else if(idade >= 3) {
+			System.out.println("Criança");
+		} else {
+			System.out.println("Bebê");
+		}
+		
+	}
+}

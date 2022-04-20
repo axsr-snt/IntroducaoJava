@@ -1,0 +1,21 @@
+package teste;
+
+import br.com.fiap.healthTrack.Carteira;
+import br.com.fiap.healthTrack.Transacao;
+
+/**
+ * Classe de Testes para Carteira
+ */
+public class TesteCarteira {
+	
+	/**
+	 * função de testes
+	 * @param args Argumentos para testes
+	 */
+	
+	public static void main(String[] args) {
+		
+		Carteira carteira = new Carteira();
+
+	}
+}

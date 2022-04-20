@@ -1,0 +1,27 @@
+package teste;
+
+import br.com.fiap.healthTrack.Transacao;
+
+/**
+ * Classe de Testes para Transacao
+ */
+public class TesteTransacao {
+
+	/**
+	 * função de testes
+	 * @param args Argumentos para testes
+	 */
+	public static void main(String[] args) {
+		Transacao transacao = new Transacao(
+				257.90f,
+				28900.00f,
+				"phone bluetooth",
+				"magazine_luiza"
+				);
+		
+		System.out.println(transacao.getTransacao());
+		System.out.println(transacao.getCarbonoUtilizado());
+		System.out.println(transacao.getProduto());
+		System.out.println(transacao.getEmpresa());
+	}
+}

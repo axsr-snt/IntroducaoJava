@@ -1,0 +1,31 @@
+package teste;
+
+import br.com.fiap.healthTrack.Carteira;
+import br.com.fiap.healthTrack.Transacao;
+
+/**
+ * Classe de Testes para Carteira
+ */
+public class TesteCarteira {
+	
+	/**
+	 * função de testes
+	 * @param args Argumentos para testes
+	 */
+	
+	public static void main(String[] args) {
+		
+		Carteira carteira = new Carteira();
+		Transacao transacao = new Transacao(
+				257.90f,
+				28900.00f,
+				"phone bluetooth",
+				"magazine_luiza"
+				);
+		
+		carteira.setTransacao(transacao);
+		
+		System.out.println(carteira.getSaldoCarbono());
+		System.out.println(carteira.getTransacao());
+	}
+}

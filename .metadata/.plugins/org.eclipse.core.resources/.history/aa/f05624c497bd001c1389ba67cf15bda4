@@ -1,0 +1,35 @@
+package introducao_poo;
+
+public class Cliente {
+	private String nome;
+	private String cpf;
+	private String telefone;
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	
+	/*Construtor é quando se cria um objeto com as caracteristicas já atribuidas*/
+	
+	public Cliente(String cpf) {
+		this.cpf = cpf;
+	}
+	
+	/*Quando não se atribui argumentos para uma classe  se cria um construtor o construtor padrão deixa de funcionar */
+	
+	public Cliente( ) {
+		
+	}
+}

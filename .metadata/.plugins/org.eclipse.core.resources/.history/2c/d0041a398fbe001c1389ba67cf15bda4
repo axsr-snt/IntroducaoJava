@@ -1,0 +1,15 @@
+package introducao_poo;
+
+import java.util.Scanner; // para fazer uso da classe Scanner precisamos importar o pacote/e a classe da biblioteca java referente a essa classe
+// a instrução import importa um pacote/ e classe
+
+public class EntradaSaida {
+	public void main(String[] args) {
+		
+		int idade = 0;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite a idade: ");
+		idade = sc.nextInt(); // retorno do input na variável idade
+	}
+}

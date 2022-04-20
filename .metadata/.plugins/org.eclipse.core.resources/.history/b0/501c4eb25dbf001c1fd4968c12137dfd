@@ -1,0 +1,26 @@
+package teste;
+
+import br.com.fiap.healthTrack.Esporte;
+
+/**
+ * Classe de Testes para Esporte
+ */
+public class TesteEsporte {
+	
+	/**
+	 * função de testes
+	 * @param args Argumentos para testes
+	 */
+	public static void main(String[] args) {
+		Esporte esporte = new Esporte(
+				"corrida",
+				100.00f,
+				500.00f
+			);
+		
+		System.out.println("Exerc�cio praticado: " + esporte.getEsporte());
+		System.out.println("Calorias queimadas: " + esporte.getCaloriaKm());
+		System.out.println("Carbono utilizado: " + esporte.getCarbonoKm());
+	}
+
+}

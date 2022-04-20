@@ -1,0 +1,117 @@
+package br.com.fiap.healthTrack;
+
+/**
+ * Informações da transação do Usuário
+ */
+public class Transacao {
+
+	// Atributos da classe
+	
+	/**
+	 * valor da transação
+	 */
+	private float transacao;
+	
+	/**
+	 * total do carbono utilizado
+	 */
+	private float carbonoUtilizado;
+
+	/**
+	 * nome do produto
+	 */
+	private String produto;
+
+	/**
+	 * nome da empresa
+	 */
+	private String empresa;
+
+	// Métodos da classe
+	
+	/**
+	 * retorna valor da transação
+	 * @return valor da transação
+	 */
+	public float getTransacao() {
+		return transacao;
+	}
+
+	/**
+	 * determina o valor da transação
+	 * @param transacao Valor da transação
+	 */
+	public void setTransacao(float transacao) {
+		this.transacao = transacao;
+	}
+	
+	/**
+	 * retorna valor do carbono utilizado
+	 * @return valor do carbono utilizado
+	 */
+	public float getCarbonoUtilizado() {
+		return carbonoUtilizado;
+	}
+
+	/**
+	 * determina o valor do carbono utilizado
+	 * @param carbonoUtilizado Quantidade do carbono utilizado
+	 */
+	public void setCarbonoUtilizado(float carbonoUtilizado) {
+		this.carbonoUtilizado = carbonoUtilizado;
+	}
+
+	/**
+	 * retorna o nome do produto
+	 * @return nome do produto
+	 */
+	public String getProduto() {
+		return produto;
+	}
+
+	/**
+	 * determina o nome do produto
+	 * @param produto Nome do produto
+	 */
+	public void setProduto(String produto) {
+		this.produto = produto;
+	}
+
+	/**
+	 * retorna o nome da empresa
+	 * @return nome da empresa
+	 */
+	public String getEmpresa() {
+		return empresa;
+	}
+
+	/**
+	 * determina o nome da empresa
+	 * @param empresa Nome da empresa
+	 */
+	public void setEmpresa(String empresa) {
+		this.empresa = empresa;
+	}
+
+	// Construtor da classe
+	
+		/**
+		 * cria nova instância de transação
+		 * @param transacao Valor da Transação
+		 * @param carbonoUtilizado Carbono utilizado na Transação
+		 * @param produto Nome do produto da Transação
+		 * @param empresa Nome da empresa da Transação
+		 */
+		public Transacao(
+				float transacao,
+				float carbonoUtilizado,
+				String produto,
+				String empresa
+			) {
+			this.transacao = transacao;
+			this.carbonoUtilizado = carbonoUtilizado;
+			this.produto = produto;
+			this.empresa = empresa;
+		}
+		
+}

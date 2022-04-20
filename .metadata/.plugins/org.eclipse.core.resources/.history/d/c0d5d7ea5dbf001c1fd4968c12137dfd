@@ -1,0 +1,23 @@
+package teste;
+
+import br.com.fiap.healthTrack.Telefone;
+
+/**
+ * Classe de Testes para Telefone
+ */
+public class TesteTelefone {
+	
+	/**
+	 * função de testes
+	 * @param args Argumentos para testes
+	 */
+	public static void main(String[] args) {
+		Telefone telefone = new Telefone(
+				11,
+				998743566
+				);
+		
+		System.out.println(telefone.getDdd());
+		System.out.println(telefone.getTelefone());
+	}
+}

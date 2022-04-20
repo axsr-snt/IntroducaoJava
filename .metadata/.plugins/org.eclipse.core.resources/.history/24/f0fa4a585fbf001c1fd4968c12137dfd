@@ -1,0 +1,60 @@
+package teste;
+
+import br.com.fiap.healthTrack.CondicionamentoFisico;
+import br.com.fiap.healthTrack.Endereco;
+import br.com.fiap.healthTrack.Esporte;
+import br.com.fiap.healthTrack.Telefone;
+import br.com.fiap.healthTrack.Usuario;
+
+/**
+ * Classe de Testes para Usuario
+ */
+public class TesteUsuario {
+
+	/**
+	 * função de testes
+	 * @param args Argumentos para testes
+	 */
+	public static void main(String[] args) {
+		Endereco endereco = new Endereco(
+				"rua 1",
+				"123",
+				"fundos",
+				"bairro do limão",
+				"03434567",
+				"perto do ponto de ônibus",
+				"São Paulo"
+				);
+		Telefone telefone = new Telefone(
+				11,
+				998743566
+				);
+		CondicionamentoFisico condicionamento = new CondicionamentoFisico(
+				1.78f,
+				78.00f
+				);
+		Esporte esporte = new Esporte(
+				"corrida",
+				100.00f,
+				500.00f
+			);
+		Usuario usuario = new Usuario(
+				"Jos�",
+				"menino-jos�",
+				"24/12/1980",
+				"jose@email.com",
+				endereco,
+				telefone,
+				condicionamento
+				);
+		
+		//usuario.setEsporte(esporte);
+		
+		System.out.println(usuario.getEsportes());
+		System.out.println(usuario.getUsuario());
+		System.out.println(usuario.getCarteira().toString());
+		System.out.println(usuario.getCondicionamentoFisico());
+		System.out.println(usuario.getEmail());
+		System.out.println(usuario.getEndereco());
+	}
+}

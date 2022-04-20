@@ -1,0 +1,52 @@
+package br.com.fiap.healthTrack;
+
+
+/*Carteira do Usuário*/
+
+public class Carteira {
+
+	private Transacao transacao;
+	
+	// Atributos da classe
+
+	/*saldo de carbono*/
+	private float saldoCarbono;
+	
+	/*adiciona transação à lista de transações da carteira @param transacao Transação da carteira*/
+	
+	public Transacao getTransacao() {
+		return transacao;
+	}
+	
+	public void setTransacao(Transacao transacao) {
+		this.transacao = transacao;
+	}
+	
+	/*retorna saldo de carbono da carteira @return saldoCarbono*/
+
+	public float getSaldoCarbono() {
+		return saldoCarbono;
+	}
+	
+	/*adiciona saldo de carbono da carteira @param saldo Saldo a ser adicionado*/
+	
+	public void adicionaSaldoCarbono(float saldo) {
+		this.saldoCarbono += saldo;
+	}
+	
+	/* retira saldo de carbono da carteira @param saldo Saldo a ser retirado da carteira*/
+	
+	public void subtraiSaldoCarbono(float saldo) {
+		this.saldoCarbono -= saldo;
+	}
+	
+	// Construtor da classe
+	
+	/*cria nova instância de Carteira com o saldo zerado*/
+	
+	/*public Carteira() {
+		this.saldoCarbono = 0.00f;
+	}*/
+
+	
+}

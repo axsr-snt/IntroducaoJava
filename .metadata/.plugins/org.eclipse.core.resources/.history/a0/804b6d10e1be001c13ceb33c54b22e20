@@ -1,0 +1,15 @@
+package ExercicioIMC;
+
+import java.util.Scanner;
+
+public class CaracteristicaUsuario {
+
+	public static void main (String[] args) {
+		
+		Usuario nome = new Usuario();
+
+		String obj1 = nome.getNomeUsuario();
+		
+		System.out.print(obj1);
+	}	
+}
