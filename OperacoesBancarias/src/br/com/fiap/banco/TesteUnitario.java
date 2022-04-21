@@ -15,18 +15,17 @@ public class TesteUnitario {
 		operacao = entrada.nextInt();
 		
 		 if (operacao == 1){
-			 double saldo = corrente.visualizarSaldo();
-			 	System.out.print("O valor do seu saldo é: R$ " + saldo);
+			 	System.out.print("O valor do seu saldo é: R$ " + corrente.getSaldo());
 			} else if (operacao == 2) {
 				System.out.println("Digite o valor do saque: ");
 				valor = entrada.nextDouble();
 				corrente.efetuarSaque(valor);
-				System.out.println("Seu saldo atual é R$: " + corrente.saldo);
+				System.out.println("Seu saldo atual é R$: " + corrente.getSaldo());
 			} else if (operacao == 3) {
 				System.out.println("Digite o valor do deposito: ");
 				valor = entrada.nextFloat();
 				corrente.depositar(valor);
-				System.out.println("Seu saldo atual é R$: " + corrente.saldo);
+				System.out.println("Seu saldo atual é R$: " + corrente.getSaldo());
 			} else {
 				System.out.println("A opção selecionada é inválida!");
 			}
