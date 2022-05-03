@@ -35,14 +35,10 @@ public class Conta {
 	}
 	
 
-
-
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 	
-
-
 
 	/**
 	 * Definição de um construtor;
@@ -70,10 +66,14 @@ public class Conta {
 	 * Método para subtrair um valor ao valor do saldo através de um saque;
 	 * @param valor
 	 */
-	public void efetuarSaque(double valor) {
+	public boolean efetuarSaque(double valor) {
 		boolean resposta = validarSaque(valor);
-			if(resposta = true)
+			if(resposta == true) {
 				this.saldo -= valor;
+				return true;
+			} else {
+				return false;
+			}
 	}
 	
 	/**
