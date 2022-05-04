@@ -1,4 +1,4 @@
-package ClasseObjetoEncapsulamento;
+package Encapsulamento;
 
 	public class Conta {
 	

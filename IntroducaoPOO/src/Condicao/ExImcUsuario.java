@@ -1,15 +1,15 @@
-package ExercicioIMC;
+package Condicao;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class CaracteristicaUsuario {
+public class ExImcUsuario {
 
 	public static void main (String[] args) {
 		
 		Scanner retorno = new Scanner(System.in);
 		DecimalFormat df = new DecimalFormat("#.##");
-		Usuario nome = new Usuario();
+		ExInfoUsuario nome = new ExInfoUsuario();
 
 		String obj1 = nome.getNomeUsuario();
 		

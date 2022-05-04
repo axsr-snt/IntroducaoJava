@@ -1,6 +1,6 @@
-package ExercicioIMC;
+package Condicao;
 
-public class Usuario {
+public class ExInfoUsuario {
 	
 	private String nomeUsuario = "Alexsander";
 	
