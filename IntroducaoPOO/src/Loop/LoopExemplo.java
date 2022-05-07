@@ -23,5 +23,7 @@ public class LoopExemplo {
 			System.out.println("\nDeseja somar novamente? (s/n)");
 			YN = leitor.next();
 		} while(YN.equals("s"));
+		
+		leitor.close();
 	}
 }

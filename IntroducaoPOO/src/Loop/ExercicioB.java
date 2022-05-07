@@ -13,7 +13,6 @@ public class ExercicioB {
 		Scanner leitor = new Scanner(System.in);
 		
 		int fator;
-		char igual = 75;
 		
 		System.out.println("Digite o fator da tabuada desejada: ");
 		fator = leitor.nextInt();
@@ -23,6 +22,8 @@ public class ExercicioB {
 		for (int i = 0; i <= 12; i++) {
 			int res = fator * i;
 			System.out.println(fator + " x " + i + " = " + res);
+		
+		leitor.close();
 		}	
 	}
 }

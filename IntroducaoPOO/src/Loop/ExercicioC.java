@@ -5,7 +5,6 @@ package Loop;
  * A sequencia segue o seguinte padrão 1, 1, 2, 3, 5... n
  */
 
-import java.util.Scanner;
 
 public class ExercicioC {
 

@@ -7,12 +7,14 @@ package Loop;
  */
 
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class ExercicioD {
 
 	public static void main(String[] args) {
 		
 		Scanner leitor = new Scanner(System.in);
+		DecimalFormat df = new DecimalFormat("0.00");
 		int contador = 0;
 		double montante = 0;
 		String YN;
@@ -32,10 +34,10 @@ public class ExercicioD {
 			System.out.println("Deseja continuar com o calculo? (s/n)");
 			YN = leitor.next();
 		} while (YN.equals("s"));
-		
+		System.out.println(montante);
 		double media = montante / contador;
-		System.out.println("Foram considerados os salários de " + contador + " funcionarios\n A média dos salários pagos é " + media%2f);
+		System.out.println("Foram considerados os salários de " + contador + " funcionarios\n A média dos salários pagos é " + df.format(media));		
 		
+		leitor.close();
 	}
-	
 }

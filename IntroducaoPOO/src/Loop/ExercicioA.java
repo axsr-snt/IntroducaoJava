@@ -25,5 +25,7 @@ public class ExercicioA {
 			soma = soma + n;
 	}
 		System.out.println("O valor da soma é: " + soma);
+		
+		leitor.close();
 	}
 }	

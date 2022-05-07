@@ -40,5 +40,6 @@ public class LoopIntro {
 			System.out.println("O caixa 3 registrou " + i + " itens");
 		}
 		
+		leitor.close();
 	}
 }
