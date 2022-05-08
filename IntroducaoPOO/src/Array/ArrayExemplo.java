@@ -6,7 +6,7 @@ public class ArrayExemplo {
 	
 		//Scanner leitor = new Scanner(System.in);
 	
-		/* 
+/* 
 		PRIMEIRA FORMA PARA ATRIBUIR VALORES PARA O ARRAY	
 		float valores[] = new float[5];	
 		valores[0] = 10;
@@ -23,7 +23,8 @@ public class ArrayExemplo {
 		System.out.println(valores[4]);
 		System.out.println(valores2[4]);
 		
-		*/	
+*/	
+/*
 		// ARRAY COM OBJETOS
 		
 		ArrayExemploProduto produtos[] = new ArrayExemploProduto[2];
@@ -60,5 +61,17 @@ public class ArrayExemplo {
 		localizacaoProduto[2][2] = prod2;
 		
 		System.out.println(localizacaoProduto[2][1].getNome());
-	}	
+*/
+		
+		ArrayExemploCarro[] carros = new ArrayExemploCarro[5];
+		
+		ArrayExemploCarro carro = new ArrayExemploCarro();
+		
+		carro.setModelo("Gol");
+		
+		carros[0] = carro;
+		
+		String modelo = carros[0].getModelo();
+		System.out.println(modelo);
+	}
 }
