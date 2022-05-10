@@ -1,6 +1,6 @@
 package Condicao;
 
-public class ExInfoUsuario {
+public class ExemploInfoUsuario {
 	
 	private String nomeUsuario = "Alexsander";
 	

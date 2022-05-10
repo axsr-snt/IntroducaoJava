@@ -1,6 +1,6 @@
 package Operador;
 
-public class Exemplo {
+public class ExemploOperador {
 	public static void main(String[] args) {
 
 		int x = 9;

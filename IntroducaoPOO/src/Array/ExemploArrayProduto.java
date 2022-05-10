@@ -1,6 +1,6 @@
 package Array;
 
-public class ArrayExemploProduto {
+public class ExemploArrayProduto {
 
 	String nome;
 	String descricao;

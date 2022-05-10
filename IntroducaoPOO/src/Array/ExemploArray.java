@@ -1,6 +1,6 @@
 package Array;
 
-public class ArrayExemplo {
+public class ExemploArray {
 
 	public static void main(String[] args) {
 	
@@ -63,9 +63,9 @@ public class ArrayExemplo {
 		System.out.println(localizacaoProduto[2][1].getNome());
 */
 		
-		ArrayExemploCarro[] carros = new ArrayExemploCarro[5];
+		ExemploArrayCarro[] carros = new ExemploArrayCarro[5];
 		
-		ArrayExemploCarro carro = new ArrayExemploCarro();
+		ExemploArrayCarro carro = new ExemploArrayCarro();
 		
 		carro.setModelo("Gol");
 		

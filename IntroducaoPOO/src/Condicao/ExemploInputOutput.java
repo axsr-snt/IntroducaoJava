@@ -5,7 +5,7 @@ import java.util.Scanner;
 /* para fazer uso da classe Scanner precisamos importar o pacote/e a classe da biblioteca java referente a essa classe
  a instrução import importa um pacote/ e classe */
 
-public class ExInpuOutput {
+public class ExemploInputOutput {
 	
 	public static void main(String[] args) {
 		

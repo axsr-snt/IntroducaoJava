@@ -2,7 +2,7 @@ package Loop;
 
 import java.util.Scanner;
 
-public class LoopIntro {
+public class IntroLoop {
 
 	public static void main (String[] args) {
 		

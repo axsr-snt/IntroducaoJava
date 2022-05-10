@@ -1,6 +1,6 @@
 package Array;
 
-public class ArrayExemploCarro {
+public class ExemploArrayCarro {
 
 	private String modelo;
 	

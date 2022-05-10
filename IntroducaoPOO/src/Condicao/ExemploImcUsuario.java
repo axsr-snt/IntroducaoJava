@@ -3,13 +3,13 @@ package Condicao;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class ExImcUsuario {
+public class ExemploImcUsuario {
 
 	public static void main (String[] args) {
 		
 		Scanner retorno = new Scanner(System.in);
 		DecimalFormat df = new DecimalFormat("#.##");
-		ExInfoUsuario nome = new ExInfoUsuario();
+		ExemploInfoUsuario nome = new ExemploInfoUsuario();
 
 		String obj1 = nome.getNomeUsuario();
 		
