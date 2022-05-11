@@ -1,6 +1,6 @@
 package String;
 
-import java.util.Arrays;
+
 
 /* Implementar um algoritmo que crie um CPF com base nas regras:
  * Representação de um CPF: xxx.xxx.xxx-yz
@@ -15,6 +15,11 @@ import java.util.Arrays;
  *  soma = 11*A + 10*B + 9*C + 8*D + 7*E + 6*F + 5*G + 4*H + 3*I + 2*J
  * 	resto = resto(soma,11)
  * 	se resto < = 1: K = 0, se não: K = 11-resto
+ */
+
+/* Referencias 
+ * https://www.delftstack.com/pt/howto/java/how-to-convert-an-integer-to-a-string-in-java/
+ * https://www.delftstack.com/pt/howto/java/java-remove-character-from-string/
  */
 
 import java.util.Random;
