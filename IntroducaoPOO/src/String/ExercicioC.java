@@ -1,7 +1,5 @@
 package String;
 
-import java.util.Arrays;
-
 /* Dado um texto contendo comente palavras separadas por caracteres em
  * branco, terminando em ponto final, escreva apenas as palavras distintas
  * existentes no texto
@@ -16,16 +14,23 @@ public class ExercicioC {
 		System.out.println(removedDot);
 		
 		String[] arrayString = removedDot.split(" ");
-		System.out.println(Arrays.toString(arrayString));
 		
-		int idx = arrayString.length -1;
-		for(int i = 0; i < idx;i++) {
-			for(int j = i+1; j < idx; j++) {
-				int k = j+1;
-				if(arrayString[i].equals(arrayString[k])) {
-					arrayString[k].
-				}
+		String newString = new String();
+		
+		int idx = arrayString.length - 1;
+		
+		for(int i = 0; i < idx; i++) {
+			String test = arrayString[i];
+			if(newString.indexOf(test) == -1){
+				newString += test + " ";
 			}
 		}
+		StringBuilder outString = new StringBuilder(newString);
+		outString.setLength(newString.length());
+		int idxLastSpace = newString.lastIndexOf(" ");
+		outString = outString.deleteCharAt(idxLastSpace);
+		System.out.println(outString);
 	}
 }
+
+

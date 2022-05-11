@@ -4,6 +4,10 @@ package String;
 /* Indique se uma expressão é palídrome
  */
 
+/* Referencia de resolução
+ * https://www.delftstack.com/pt/howto/java/how-to-reverse-a-string-in-java/ 
+ */
+
 public class ExercicioB {
 
 	public static void main(String[] args) {
